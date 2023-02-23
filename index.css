@@ -1,6 +1,17 @@
+:root {
+  --background: #EDF2F7;
+  --blue:  linear-gradient(to right, rgba(1, 149, 218, 0.67), #0195DA,  #1B4BA8)
+
+  --text-black: #333849;
+  --offline: #DC3545;
+  --online: #77D164;
+  --text-white: #ffffff;
+
+}
+
 * {
-  margin: 0;
-  border: 0;
   box-sizing: border-box;
   font-family: "Roboto"
+  background-color: var(--background)
 }
+
