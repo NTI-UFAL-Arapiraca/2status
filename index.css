@@ -6,6 +6,7 @@
   --offline: #DC3545;
   --online: #77D164;
   --text-white: #ffffff;
+  --white-ice: #00000008
 
 }
 
@@ -19,21 +20,23 @@
 
   color: var(--text-white);
   padding: 15px;
+  height: 6rem;
   background-image: linear-gradient(to right, rgba(1, 149, 218, 0.67), #0195DA,  #1B4BA8)
 }
 
 .nav-image {
   box-sizing: content-box;
 
-  /*position: absolute;*/
+  position: relative;
   /*width: 103rem;*/
   /*height: 28rem;*/
-  margin-top: -400px;
-
-  height: 455px;
+  margin-top: -15px;
+/*padding:50px;*/
+  height: 6rem;
   background-size: cover;
-  background-position: center
+  background-position: center;
   background-repeat: no-repeat;
+  display: inline-block;
   background-image: url(/images/ufal-sigla-branca-fundo-transparente-40por-cento.png)
   
 }
@@ -77,4 +80,21 @@ a {
   text-decoration: none;
   text-color: var(--text-black);
  
+}
+
+ul .collection-list {
+  background-color: var(--white-ice)
+}
+
+.ph-x-circle-bold  {
+color: var(--text-white)
+}
+
+.ph-check-circle-bold{
+
+  color: var(--text-black)
+}
+
+.collection-item {
+  background: var(--offline)
 }
