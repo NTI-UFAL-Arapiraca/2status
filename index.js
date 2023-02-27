@@ -33,3 +33,9 @@ const Modal = {
       .remove('active');
   }
 };
+
+
+const card = document.getElementById("modal");
+
+document.addEventListener("click", card);
+
