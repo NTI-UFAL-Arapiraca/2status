@@ -68,3 +68,13 @@ justify-content: center;
   opacity: .8;
 
 }
+
+.ph-book-open-bold {
+  color: var(--text-black);
+}
+
+a {
+  text-decoration: none;
+  text-color: var(--text-black);
+ 
+}
