@@ -16,9 +16,13 @@
   <nav class="nav-wrapper">
     <h1 class="title">UFAL Arapiraca - Status</h1>
 </nav>
-
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick=closeModal()>&times;</span>
+    <h4 class="modal-content-title">some title</h4>
+  </div>
+</div>
 <div class="container">
-
   <div class="collection">
     <h4 class="collection-header">Serviços</h4>
     <ul class="collection-list">
@@ -45,7 +49,7 @@
         </a>
       </li>
       <li class="collection-item online">
-        <a href="#">
+        <a href="#" onclick=openModal()>
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
@@ -271,7 +275,7 @@
 <footer class="page-footer blue-grey">
   <div class="footer-copyright">
     <div class="container">
-      Generated at <div>2023-02-07 16:55 by 2status 0.6b2</div>
+      Generated at <div>  2023-02-07 16:55 by 2status 0.6b2</div>
     </div>
   </div>
 </footer>
