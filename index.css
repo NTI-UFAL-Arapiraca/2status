@@ -1,100 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
 :root {
   --background: #EDF2F7;
-  --linear-blue:  linear-gradient(to right, rgba(1, 149, 218, 0.67), #0195DA,  #1B4BA8)
+  --linear-blue:  linear-gradient(to right, rgba(1, 149, 218, 0.67), #0195DA,  #1B4BA8);
 
   --text-black: #333849;
   --offline: #DC3545;
   --online: #77D164;
   --text-white: #ffffff;
-  --white-ice: #00000008
+  --background-container: #0000000A
 
 }
-
 * {
   box-sizing: border-box;
-  font-family: "Roboto"
-  background-color: var(--background)
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
+body{
+  background-color: var(--background);
+}
 .nav-wrapper {
-
-  color: var(--text-white);
+  height: 8rem;
   padding: 15px;
-  height: 6rem;
-  background-image: linear-gradient(to right, rgba(1, 149, 218, 0.67), #0195DA,  #1B4BA8)
+  background-image: linear-gradient(to right, rgba(1, 149, 218, 0.67), #0195DA,  #1B4BA8);
+  position: relative;
 }
 
 .nav-image {
-  box-sizing: content-box;
-
-  position: relative;
-  /*width: 103rem;*/
-  /*height: 28rem;*/
-  margin-top: -15px;
-/*padding:50px;*/
-  height: 6rem;
-  background-size: cover;
-  background-position: center;
+  position: absolute;
+  top: -5rem;
+  right: 30%;
+  height: 13rem;
+  width: 20rem;
+  background-size: 100%;
   background-repeat: no-repeat;
-  display: inline-block;
   background-image: url(/images/ufal-sigla-branca-fundo-transparente-40por-cento.png)
-  
 }
 
-.image{
-}
-
-.nav-title {
-display: flex;
-flex-direction: flex-start;
-align-items: flex-start;
-justify-content: center;
-
-}
-
-.collection-card {
-  border: 1px solid var(--text-black)
-  width: 2rem;
-  height: 3rem;
-  padding: 20px;
-  marging: 20px;
+.title{
+  color: var(--text-white);
+  font-size: xx-large;
+  background-color: transparent;
+  position: relative;
+  top: 35%;
+  align-items: center;
   display: flex;
-  transition: .5s;
-  opacity: 1;
-  background-color: var(--offline)
-  
-
+  justify-content: center;
 }
-
-.collection-card:hover {
-  cursor:pointer;
-  opacity: .8;
-
+.collection{
+  background-color: var(--background-container);
+  border-radius: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
 }
-
-.ph-book-open-bold {
+.collection-list{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  gap: 1rem;
+}
+.collection-header{
+  color: var(--text-black);
+  font-size: x-large;
+  background-color: transparent;
+  padding: 1rem 0 1rem 0;
+}
+.container{
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.collection-item{
+  border-radius: 1rem;
+  background-color: var(--background-container);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0 1rem 0 1rem;
+}
+.collection-item a{
+  text-decoration: none;
+}
+.collection-item-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.collection-item-content{
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 500;
+  gap: 1rem;
+}
+.collection-item-title{
+  background-color: transparent;
   color: var(--text-black);
 }
+.online{
+  background-color: var(--online);
+  color: var(--text-black);
+}
+.online div{
+  color: var(--text-black);
 
-a {
-  text-decoration: none;
-  text-color: var(--text-black);
- 
+}
+.offline{
+  background-color: var(--offline);
+  color: var(--text-white);
+}
+.offline div{
+  color: var(--text-white);
+}
+.card-panel{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+}
+.card-panel-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+}
+.status-online .card-panel-icon{
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  background-color: var(--online);
+}
+.status-offline .card-panel-icon{
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  color: var(--text-white);
+  background-color: var(--offline);
 }
 
-ul .collection-list {
-  background-color: var(--white-ice)
-}
-
-.ph-x-circle-bold  {
-color: var(--text-white)
-}
-
-.ph-check-circle-bold{
-
-  color: var(--text-black)
-}
-
-.collection-item {
-  background: var(--offline)
-}
