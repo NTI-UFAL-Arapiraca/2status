@@ -18,8 +18,22 @@
 </nav>
 <div id="modal" class="modal">
   <div class="modal-content">
-    <span class="close" onclick=closeModal()>&times;</span>
-    <h4 class="modal-content-title">some title</h4>
+    <i class="ph-x close" onclick=closeModal()></i>
+    <div class="modal-content-info">
+      <h4 id="title" class="modal-content-title">some title</h4>
+      <div id="online" class="modal-content-status status-online">
+        <i class="ph-check ph-xl online"></i>
+        <h4>Online</h4>
+      </div>
+      <div id="offline" class="modal-content-status status-offline">
+        <h4 class="modal-content-status-time">10/12/23 - 10:19</h4>
+        <i class="ph-warning-circle ph-xl offline"></i>
+        <h4>Offline</h4>
+      </div>
+      </div>
+      <div class="modal-content-image"></div>
+    </div>
+
   </div>
 </div>
 <div class="container">
@@ -27,7 +41,7 @@
     <h4 class="collection-header">Serviços</h4>
     <ul class="collection-list">
       <li class="collection-item">
-        <a href="#">
+        <a href="#" onclick="openModal(true, 'Biblioteca')">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
@@ -38,7 +52,7 @@
         </a>
       </li>
       <li class="collection-item offline">
-        <a href="#">
+        <a href="#" onclick="openModal(false, 'Codeberg')">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
@@ -49,7 +63,7 @@
         </a>
       </li>
       <li class="collection-item online">
-        <a href="#" onclick=openModal()>
+        <a href="#" onclick="openModal(false, 'Codeberg')">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
@@ -60,7 +74,7 @@
         </a>
       </li>
       <li class="collection-item">
-        <a href="#">
+        <a href="#" onclick="openModal(false, 'Codeberg')">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
@@ -71,7 +85,7 @@
         </a>
       </li>
       <li class="collection-item">
-        <a href="#">
+        <a href="#" onclick="openModal(false, 'Codeberg')">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
@@ -82,7 +96,7 @@
         </a>
       </li>
       <li class="collection-item">
-        <a href="#">
+        <a href="#" onclick="openModal(false, 'Codeberg')">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
@@ -93,7 +107,7 @@
         </a>
       </li>
       <li class="collection-item">
-        <a href="#">
+        <a href="#" onclick="openModal(false, 'Codeberg')">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
@@ -104,7 +118,7 @@
         </a>
       </li>
       <li class="collection-item">
-        <a href="#">
+        <a href="#" onclick="openModal(false, 'Codeberg')">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
@@ -115,7 +129,7 @@
         </a>
       </li>
       <li class="collection-item">
-        <a href="#">
+        <a href="#" onclick="openModal(false, 'Codeberg')">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
@@ -126,7 +140,7 @@
         </a>
       </li>
       <li class="collection-item">
-        <a href="#">
+        <a href="#" onclick="openModal(false, 'Codeberg')"> 
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
