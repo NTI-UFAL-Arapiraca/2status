@@ -53,7 +53,7 @@ body{
 }
 .modal-content-title{
   font-size: xx-large;
-  color: var(--text-black);
+  color: #0195DA;
 }
 .modal-content-status{
   align-self: center;
@@ -69,6 +69,9 @@ body{
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
+}
+.modal a{
+  text-decoration: none;
 }
 .modal-content-status i{
   border-radius: 0.25rem;
@@ -139,6 +142,10 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+
+}
+.collection-list:hover{
+  cursor: pointer;
 }
 .collection-header{
   color: var(--text-black);
@@ -151,9 +158,6 @@ body{
   background-color: var(--background-container);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 0 1rem 0 1rem;
-}
-.collection-item a{
-  text-decoration: none;
 }
 .collection-item-info{
   display: flex;
