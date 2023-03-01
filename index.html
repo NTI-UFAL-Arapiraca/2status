@@ -12,8 +12,7 @@
   <title>2Status</title>
 </head>
 <body>
-  
-  <nav class="nav-wrapper">
+<nav class="nav-wrapper">
     <h1 class="title">UFAL Arapiraca - Status</h1>
 </nav>
 <div id="modal" class="modal">
@@ -22,13 +21,18 @@
     <div class="modal-content-info">
       <h4 id="title" class="modal-content-title">some title</h4>
       <div id="online" class="modal-content-status status-online">
-        <i class="ph-check ph-xl online"></i>
-        <h4>Online</h4>
+        <div class="modal-status">
+          <i class="ph-check ph-xl online"></i>
+          <h4>Online</h4>
+        </div>
       </div>
       <div id="offline" class="modal-content-status status-offline">
         <h4 class="modal-content-status-time">10/12/23 - 10:19</h4>
-        <i class="ph-warning-circle ph-xl offline"></i>
-        <h4>Offline</h4>
+        <div class="modal-status">
+          <i class="ph-warning-circle ph-xl offline"></i>
+          <h4>Offline</h4>  
+        </div>
+
       </div>
       </div>
       <div class="modal-content-image"></div>
@@ -36,193 +40,169 @@
 
   </div>
 </div>
-<div class="container">
-  <div class="collection">
-    <h4 class="collection-header">Serviços</h4>
-    <ul class="collection-list">
-      <li class="collection-item">
-        <a href="#" onclick="openModal(true, 'Biblioteca')">
+<div class="content">
+  <div class="container">
+    <div class="collection">
+      <h4 class="collection-header">Serviços</h4>
+      <ul class="collection-list">
+        <li class="collection-item">
+          <a href="#" onclick="openModal(true, 'Biblioteca')">
+            <div class="collection-item-content">
+              <div class="collection-item-info">
+                <i class=" ph-book-open ph-xl"></i>
+                <h5></h5>
+              </div>
+              <div class="collection-item-title">Codeberg</div>
+            </div>
+          </a>
+        </li>
+        <li class="collection-item offline">
+          <a href="#" onclick="openModal(false, 'Codeberg')">
+            <div class="collection-item-content">
+              <div class="collection-item-info">
+                <i class=" ph-book-open ph-xl"></i>
+                <h5>1d</h5>
+              </div>
+              <div class="collection-item-title">Codeberg</div>
+            </div>
+          </a>
+        </li>
+        <li class="collection-item online">
+          <a href="#" onclick="openModal(false, 'Codeberg')">
+            <div class="collection-item-content">
+              <div class="collection-item-info">
+                <i class=" ph-book-open ph-xl"></i>
+                <h5></h5>
+              </div>
+              <div class="collection-item-title">Codeberg</div>
+            </div>
+          </a>
+        </li>
+        <li class="collection-item">
+          <a href="#" onclick="openModal(false, 'Codeberg')">
+            <div class="collection-item-content">
+              <div class="collection-item-info">
+                <i class=" ph-book-open ph-xl"></i>
+                <h5></h5>
+              </div>
+              <div class="collection-item-title">Codeberg</div>
+            </div>
+          </a>
+        </li>
+        <li class="collection-item">
+          <a href="#" onclick="openModal(false, 'Codeberg')">
+            <div class="collection-item-content">
+              <div class="collection-item-info">
+                <i class=" ph-book-open ph-xl"></i>
+                <h5></h5>
+              </div>
+              <div class="collection-item-title">Codeberg</div>
+            </div>
+          </a>
+        </li>
+        <li class="collection-item">
+          <a href="#" onclick="openModal(false, 'Codeberg')">
+            <div class="collection-item-content">
+              <div class="collection-item-info">
+                <i class=" ph-book-open ph-xl"></i>
+                <h5></h5>
+              </div>
+              <div class="collection-item-title">Codeberg</div>
+            </div>
+          </a>
+        </li>
+        <li class="collection-item">
+          <a href="#" onclick="openModal(false, 'Codeberg')">
+            <div class="collection-item-content">
+              <div class="collection-item-info">
+                <i class=" ph-book-open ph-xl"></i>
+                <h5></h5>
+              </div>
+              <div class="collection-item-title">Codeberg</div>
+            </div>
+          </a>
+        </li>
+        <li class="collection-item">
+          <a href="#" onclick="openModal(false, 'Codeberg')">
+            <div class="collection-item-content">
+              <div class="collection-item-info">
+                <i class=" ph-book-open ph-xl"></i>
+                <h5></h5>
+              </div>
+              <div class="collection-item-title">Codeberg</div>
+            </div>
+          </a>
+        </li>
+        <li class="collection-item">
+          <a href="#" onclick="openModal(false, 'Codeberg')">
+            <div class="collection-item-content">
+              <div class="collection-item-info">
+                <i class=" ph-book-open ph-xl"></i>
+                <h5></h5>
+              </div>
+              <div class="collection-item-title">Codeberg</div>
+            </div>
+          </a>
+        </li>
+        <li class="collection-item">
+          <a href="#" onclick="openModal(false, 'Codeberg')"> 
+            <div class="collection-item-content">
+              <div class="collection-item-info">
+                <i class=" ph-book-open ph-xl"></i>
+                <h5></h5>
+              </div>
+              <div class="collection-item-title">Codeberg</div>
+            </div>
+          </a>
+        </li>
+    
+      </ul>
+    </div>
+    <div class="collection">
+      <h4 class="collection-header">Voip</h4>
+      <ul class="collection-list">
+        <li class="collection-item">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
               <h5></h5>
             </div>
-            <div class="collection-item-title">Codeberg</div>
+            <div class="collection-item-title">Arapiraca</div>
           </div>
-        </a>
-      </li>
-      <li class="collection-item offline">
-        <a href="#" onclick="openModal(false, 'Codeberg')">
-          <div class="collection-item-content">
-            <div class="collection-item-info">
-              <i class=" ph-book-open ph-xl"></i>
-              <h5>1d</h5>
-            </div>
-            <div class="collection-item-title">Codeberg</div>
-          </div>
-        </a>
-      </li>
-      <li class="collection-item online">
-        <a href="#" onclick="openModal(false, 'Codeberg')">
+        </li>
+        <li class="collection-item">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
               <h5></h5>
             </div>
-            <div class="collection-item-title">Codeberg</div>
+            <div class="collection-item-title">Palmeira</div>
           </div>
-        </a>
-      </li>
-      <li class="collection-item">
-        <a href="#" onclick="openModal(false, 'Codeberg')">
+        </li>
+        <li class="collection-item">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
               <h5></h5>
             </div>
-            <div class="collection-item-title">Codeberg</div>
+            <div class="collection-item-title">Penedo</div>
           </div>
-        </a>
-      </li>
-      <li class="collection-item">
-        <a href="#" onclick="openModal(false, 'Codeberg')">
+        </li>
+        <li class="collection-item">
           <div class="collection-item-content">
             <div class="collection-item-info">
               <i class=" ph-book-open ph-xl"></i>
               <h5></h5>
             </div>
-            <div class="collection-item-title">Codeberg</div>
+            <div class="collection-item-title">Penedo Anexo</div>
           </div>
-        </a>
-      </li>
-      <li class="collection-item">
-        <a href="#" onclick="openModal(false, 'Codeberg')">
-          <div class="collection-item-content">
-            <div class="collection-item-info">
-              <i class=" ph-book-open ph-xl"></i>
-              <h5></h5>
-            </div>
-            <div class="collection-item-title">Codeberg</div>
-          </div>
-        </a>
-      </li>
-      <li class="collection-item">
-        <a href="#" onclick="openModal(false, 'Codeberg')">
-          <div class="collection-item-content">
-            <div class="collection-item-info">
-              <i class=" ph-book-open ph-xl"></i>
-              <h5></h5>
-            </div>
-            <div class="collection-item-title">Codeberg</div>
-          </div>
-        </a>
-      </li>
-      <li class="collection-item">
-        <a href="#" onclick="openModal(false, 'Codeberg')">
-          <div class="collection-item-content">
-            <div class="collection-item-info">
-              <i class=" ph-book-open ph-xl"></i>
-              <h5></h5>
-            </div>
-            <div class="collection-item-title">Codeberg</div>
-          </div>
-        </a>
-      </li>
-      <li class="collection-item">
-        <a href="#" onclick="openModal(false, 'Codeberg')">
-          <div class="collection-item-content">
-            <div class="collection-item-info">
-              <i class=" ph-book-open ph-xl"></i>
-              <h5></h5>
-            </div>
-            <div class="collection-item-title">Codeberg</div>
-          </div>
-        </a>
-      </li>
-      <li class="collection-item">
-        <a href="#" onclick="openModal(false, 'Codeberg')"> 
-          <div class="collection-item-content">
-            <div class="collection-item-info">
-              <i class=" ph-book-open ph-xl"></i>
-              <h5></h5>
-            </div>
-            <div class="collection-item-title">Codeberg</div>
-          </div>
-        </a>
-      </li>
-  
-    </ul>
-  </div>
-  <div class="collection">
-    <h4 class="collection-header">Voip</h4>
-    <ul class="collection-list">
-      <li class="collection-item">
-        <div class="collection-item-content">
-          <div class="collection-item-info">
-            <i class=" ph-book-open ph-xl"></i>
-            <h5></h5>
-          </div>
-          <div class="collection-item-title">Arapiraca</div>
-        </div>
-      </li>
-      <li class="collection-item">
-        <div class="collection-item-content">
-          <div class="collection-item-info">
-            <i class=" ph-book-open ph-xl"></i>
-            <h5></h5>
-          </div>
-          <div class="collection-item-title">Palmeira</div>
-        </div>
-      </li>
-      <li class="collection-item">
-        <div class="collection-item-content">
-          <div class="collection-item-info">
-            <i class=" ph-book-open ph-xl"></i>
-            <h5></h5>
-          </div>
-          <div class="collection-item-title">Penedo</div>
-        </div>
-      </li>
-      <li class="collection-item">
-        <div class="collection-item-content">
-          <div class="collection-item-info">
-            <i class=" ph-book-open ph-xl"></i>
-            <h5></h5>
-          </div>
-          <div class="collection-item-title">Penedo Anexo</div>
-        </div>
-      </li>
+        </li>
 
-    </ul>
-  </div>
-  <div class="collection">
-    <h4 class="collection-header">Gateway</h4>
-    <ul class="collection-list">
-
-    <li class="collection-item">
-      <div class="collection-item-content">
-        <div class="collection-item-info">
-          <i class=" ph-book-open ph-xl"></i>
-          <h5></h5>
-        </div>
-        <div class="collection-item-title">DNS (interno)</div>
-      </div>
-    </li>
-    <li class="collection-item">
-      <div class="collection-item-content">
-        <div class="collection-item-info">
-          <i class=" ph-book-open ph-xl"></i>
-          <h5></h5>
-        </div>
-        <div class="collection-item-title">Samba (interno)</div>
-      </div>
-    </li>
-
-    </ul>
-  </div>
-  <div class="collection">
-    <h4 class="collection-header">GTI</h4>
-    <ul class="collection-list">
+      </ul>
+    </div>
+    <div class="collection">
+      <h4 class="collection-header">Gateway</h4>
+      <ul class="collection-list">
 
       <li class="collection-item">
         <div class="collection-item-content">
@@ -239,61 +219,84 @@
             <i class=" ph-book-open ph-xl"></i>
             <h5></h5>
           </div>
-          <div class="collection-item-title">DNS (interno)</div>
+          <div class="collection-item-title">Samba (interno)</div>
         </div>
       </li>
-      <li class="collection-item">
-        <div class="collection-item-content">
-          <div class="collection-item-info">
-            <i class=" ph-book-open ph-xl"></i>
-            <h5></h5>
+
+      </ul>
+    </div>
+    <div class="collection">
+      <h4 class="collection-header">GTI</h4>
+      <ul class="collection-list">
+
+        <li class="collection-item">
+          <div class="collection-item-content">
+            <div class="collection-item-info">
+              <i class=" ph-book-open ph-xl"></i>
+              <h5></h5>
+            </div>
+            <div class="collection-item-title">DNS (interno)</div>
           </div>
-          <div class="collection-item-title">DNS (interno)</div>
-        </div>
-      </li>
-      <li class="collection-item">
-        <div class="collection-item-content">
-          <div class="collection-item-info">
-            <i class=" ph-book-open ph-xl"></i>
-            <h5></h5>
+        </li>
+        <li class="collection-item">
+          <div class="collection-item-content">
+            <div class="collection-item-info">
+              <i class=" ph-book-open ph-xl"></i>
+              <h5></h5>
+            </div>
+            <div class="collection-item-title">DNS (interno)</div>
           </div>
-          <div class="collection-item-title">DNS (interno)</div>
-        </div>
-      </li>
-      <li class="collection-item">
-        <div class="collection-item-content">
-          <div class="collection-item-info">
-            <i class=" ph-book-open ph-xl"></i>
-            <h5></h5>
+        </li>
+        <li class="collection-item">
+          <div class="collection-item-content">
+            <div class="collection-item-info">
+              <i class=" ph-book-open ph-xl"></i>
+              <h5></h5>
+            </div>
+            <div class="collection-item-title">DNS (interno)</div>
           </div>
-          <div class="collection-item-title">DNS (interno)</div>
-        </div>
-      </li>
+        </li>
+        <li class="collection-item">
+          <div class="collection-item-content">
+            <div class="collection-item-info">
+              <i class=" ph-book-open ph-xl"></i>
+              <h5></h5>
+            </div>
+            <div class="collection-item-title">DNS (interno)</div>
+          </div>
+        </li>
+        <li class="collection-item">
+          <div class="collection-item-content">
+            <div class="collection-item-info">
+              <i class=" ph-book-open ph-xl"></i>
+              <h5></h5>
+            </div>
+            <div class="collection-item-title">DNS (interno)</div>
+          </div>
+        </li>
 
-    </ul>
-  </div>
-</div>
-
-<div class="card-panel">
-  <div class="card-panel-div status-online">
-    <div class="card-panel-status">Online</div> 
-    <i class="ph-check ph-xl card-panel-icon"></i>  
-  </div>
-  <div class="card-panel-div status-offline">
-    <i class="ph-warning-circle ph-xl card-panel-icon"></i>
-    <div class="card-panel-status">Offline</div>
-  </div>
-
-</div>
-
-<footer class="page-footer blue-grey">
-  <div class="footer-copyright">
-    <div class="container">
-      Generated at <div>  2023-02-07 16:55 by 2status 0.6b2</div>
+      </ul>
     </div>
   </div>
-</footer>
+
+  <div class="card-panel">
+    <div class="card-panel-div status-online">
+      <div class="card-panel-status">Online</div> 
+      <i class="ph-check ph-xl card-panel-icon"></i>  
+    </div>
+    <div class="card-panel-div status-offline">
+      <i class="ph-warning-circle ph-xl card-panel-icon"></i>
+      <div class="card-panel-status">Offline</div>
+    </div>
+
+  </div>
+</div>
 
   <script src="/index.js"></script>
 </body>
+<footer class="page-footer blue-grey">
+  <div class="footer-copyright">
+      Generated at <div>  2023-02-07 16:55 by 2status 0.6b2</div>
+  </div>
+</footer>
 </html>
