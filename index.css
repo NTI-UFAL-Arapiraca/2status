@@ -113,13 +113,42 @@ body{
   display: flex;
   justify-content: center;
   background-image: linear-gradient(to right, rgba(1, 149, 218, 0.67), #0195DA,  #1B4BA8);
+  position: relative;
 }
+
+.nav-image {
+  position: absolute;
+  top: -5rem;
+  right: 30%;
+  height: 13rem;
+  width: 20rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(/images/ufal-sigla-branca-fundo-transparente-40por-cento.png)
+}
+
 .title{
   color: var(--text-white);
   font-weight: 600;
   font-size: xx-large;
   align-self: center;
   background-color: transparent;
+  position: relative;
+  top: 35%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.container{
+  padding: 2rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .content{
   display: flex;
