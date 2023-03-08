@@ -25,27 +25,39 @@
       <a href="#">
         <h4 id="title" class="modal-content-title">some title</h4>
       </a>
-      <div id="online" class="modal-content-status status-online">
-        <div class="modal-status">
-          <i class="ph-check ph-xl online"></i>
+      <div id="online" class="modal-content-status ">
+        <div class="modal-status  online">
+          <i class="ph-check ph-xl"></i>
           <h4>Online</h4>
         </div>
       </div>
-      <div id="offline" class="modal-content-status status-offline">
+      <div id="offline" class="modal-content-status">
         <h4 class="modal-content-status-time">10/12/23 - 10:19</h4>
-        <div class="modal-status">
-          <i class="ph-warning-circle ph-xl offline"></i>
+        <div class="modal-status offline">
+          <i class="ph-warning-circle ph-xl"></i>
           <h4>Offline</h4>  
         </div>
 
       </div>
       </div>
-      <div class="modal-content-image"></div>
+      <div class="modal-content-image-container">
+        <img class="modal-info-image" src="https://via.placeholder.com/400" alt="placeholder">
+      </div>
     </div>
 
   </div>
 </div>
 <div class="content">
+  <div class="card-panel">
+    <div class="card-panel-div status-online">
+      <div class="card-panel-status">Online</div> 
+      <i class="ph-check ph-xl card-panel-icon"></i>  
+    </div>
+    <div class="card-panel-div status-offline">
+      <i class="ph-warning-circle ph-xl card-panel-icon"></i>
+      <div class="card-panel-status">Offline</div>
+    </div>
+  </div>
   <div class="container">
     <div class="collection">
       <h4 class="collection-header">Serviços</h4>
@@ -68,7 +80,7 @@
               <div class="collection-item-title">Codeberg</div>
             </div>
         </li>
-        <li class="collection-item online" onclick="openModal(false, 'Codeberg')">
+        <li class="collection-item online" onclick="openModal(true, 'Codeberg')">
             <div class="collection-item-content">
               <div class="collection-item-info">
                 <i class=" ph-book-open ph-xl"></i>
@@ -262,18 +274,6 @@
 
       </ul>
     </div>
-  </div>
-
-  <div class="card-panel">
-    <div class="card-panel-div status-online">
-      <div class="card-panel-status">Online</div> 
-      <i class="ph-check ph-xl card-panel-icon"></i>  
-    </div>
-    <div class="card-panel-div status-offline">
-      <i class="ph-warning-circle ph-xl card-panel-icon"></i>
-      <div class="card-panel-status">Offline</div>
-    </div>
-
   </div>
 </div>
 
