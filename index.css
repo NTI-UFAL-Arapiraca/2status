@@ -221,6 +221,7 @@ body{
   gap: 1rem;
   justify-content: center;
   font-weight: 500;
+
 }
 .card-panel-div{
   display: flex;
@@ -276,7 +277,12 @@ body{
     font-size: x-large;
   }
   .modal-content-info{
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+  }
+  .modal-content-status{
+    flex-direction: column;
     align-items: center;
   }
 }
@@ -313,6 +319,20 @@ body{
     width: 15rem;
   }
   .collection{
+    padding: 1rem;
+  }
+
+  .card-panel {
+    flex-direction: column;
+   align-items: center;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
   }
 }
