@@ -336,3 +336,7 @@ body{
     padding: 1rem;
   }
 }
+
+@media (max-width: 240px){
+  
+}
