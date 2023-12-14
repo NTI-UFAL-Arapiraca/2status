@@ -338,26 +338,30 @@ body{
 }
 
 @media (max-width: 240px) {
+  .nav-wrapper{
+    height: 3%;
+    padding: 5px;
+  }
   .title{
     font-size: large;
   }
-  .nav-wrapper{
-    height: 5%;
+  .container{
+    padding: 10px;
   }
   .content{
     flex-direction: column-reverse;
+  }
+  .collection{
+    padding: 1px;
+    background-color: transparent;
+    line-height: 95%;
   }
   .collection-header{
     padding: 0;
     margin-bottom: 8px;
     font-size: medium;
   }
-  .collection-list{
-    line-height: 10px;
-  }
-  .card-panel{
-    position: relative;
-  }
+
   .ph-book-open {
     display: none;
   }
