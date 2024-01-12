@@ -251,6 +251,10 @@ body {
   gap: 0.5rem;
 }
 
+.qr-code {
+  text-align: center;
+}
+
 @media (max-width: 1279px) {
   .card-panel {
     padding-bottom: 0;
@@ -382,10 +386,7 @@ body {
     padding: 0;
     padding-bottom: 0.5rem;
   }
-  .collection-item {
-  
-    
-  }
+
   .collection-item-content {
     flex-direction: row-reverse;
     padding: 6px 0;
@@ -401,5 +402,8 @@ body {
   .footer-copyright {
     font-size: x-small;
     
+  }
+  .qr-code {
+    max-width: 90%;
   }
 }
